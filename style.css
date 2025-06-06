@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff7ed;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.navbar {
+  background-color: #4e342e;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #d7a86e;
+  color: black;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #4e342e;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4e342e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #d7a86e;
+  color: black;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+
+.menu-right img,
+.product-card img {
+  max-width: 10%;     
+  height: auto;        
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  max-height: 250px;   
+  object-fit: cover;   
+}
+
+
+.menu-container,
+.products {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .menu-right img,
+  .product-card img {
+    max-width: 80%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+form button:hover {
+  background-color: #00704a;
+  color: white;
+}
+
+#success-message {
+  color: #00704a;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
